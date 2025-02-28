@@ -1,0 +1,46 @@
+[
+    {
+        "eObjType": 2,
+        "fPosX": 25.14908790588379,
+        "fPosY": 0.0,
+        "fPosZ": 15.555768966674805,
+        "fRotY": 0.0,
+        "sComponentName": "Prototype_Component_Obj_area3",
+        "sFileName": "area3",
+        "sLayerTag": "Layer_Obj_area30",
+        "sPrototpyeName": "Prototype_GameObject_Obj_area3"
+    },
+    {
+        "eObjType": 2,
+        "fPosX": 67.7503890991211,
+        "fPosY": 1.4713435173034668,
+        "fPosZ": 16.557937622070313,
+        "fRotY": 90.0,
+        "sComponentName": "Prototype_Component_Obj_area6",
+        "sFileName": "area6",
+        "sLayerTag": "Layer_Obj_area60",
+        "sPrototpyeName": "Prototype_GameObject_Obj_area6"
+    },
+    {
+        "eObjType": 0,
+        "fPosX": 110.39642333984375,
+        "fPosY": -0.5535240173339844,
+        "fPosZ": -39.01565933227539,
+        "fRotY": -90.0,
+        "sComponentName": "Prototype_Component_Obj_11101",
+        "sFileName": "11101",
+        "sLayerTag": "Layer_Obj_111010",
+        "sPrototpyeName": "Prototype_GameObject_Obj_11101"
+    },
+    {
+        "eObjType": 0,
+        "fPosX": -17.399160385131836,
+        "fPosY": 0.058455705642700195,
+        "fPosZ": -40.94908905029297,
+        "fRotY": 0.0,
+        "sComponentName": "Prototype_Component_Obj_11101",
+        "sFileName": "11101",
+        "sLayerTag": "Layer_Obj_111011",
+        "sPrototpyeName": "Prototype_GameObject_Obj_11101"
+    }
+]

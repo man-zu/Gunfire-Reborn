@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{05C786EE-450C-4AE1-A7F8-DB8EE3C7DD7F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>My3D</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>false</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>false</EnableUnitySupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\Bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\Bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../Public/;../../EngineSDK/Inc/;../../EngineSDK/Inc/Fmod/;../../EngineSDK/Inc/Engine_Inc/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../EngineSDK/Lib/</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Engine.lib;fmod_vc.lib;fmodL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../Public/;../../EngineSDK/Inc/;../../EngineSDK/Inc/Fmod/;../../EngineSDK/Inc/Engine_Inc/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../EngineSDK/Lib/</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Engine.lib;fmod_vc.lib;fmodL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Public\Arrow.h" />
+    <ClInclude Include="..\public\BackGround.h" />
+    <ClInclude Include="..\Public\Boss.h" />
+    <ClInclude Include="..\Public\Boss_65_Body.h" />
+    <ClInclude Include="..\Public\Boss_Effect_Crack.h" />
+    <ClInclude Include="..\Public\Boss_Effect_CrackLight.h" />
+    <ClInclude Include="..\Public\Boss_Skill_JumpStone.h" />
+    <ClInclude Include="..\Public\Boss_Skill_Shot.h" />
+    <ClInclude Include="..\Public\Boss_Skill_ThrowStone.h" />
+    <ClInclude Include="..\Public\Box.h" />
+    <ClInclude Include="..\Public\BoxPart.h" />
+    <ClInclude Include="..\public\Camera_Free.h" />
+    <ClInclude Include="..\Public\Camera_Player.h" />
+    <ClInclude Include="..\Public\Client_Defines.h" />
+    <ClInclude Include="..\Public\Client_Function.h" />
+    <ClInclude Include="..\Public\Client_Header.h" />
+    <ClInclude Include="..\Public\Client_Macro.h" />
+    <ClInclude Include="..\Public\Coin.h" />
+    <ClInclude Include="..\Public\Door.h" />
+    <ClInclude Include="..\Public\Boss_Effect_TargetRing.h" />
+    <ClInclude Include="..\Public\imgui\imconfig.h" />
+    <ClInclude Include="..\Public\imgui\imgui.h" />
+    <ClInclude Include="..\Public\imgui\ImGuizmo\GraphEditor.h" />
+    <ClInclude Include="..\Public\imgui\ImGuizmo\ImCurveEdit.h" />
+    <ClInclude Include="..\Public\imgui\ImGuizmo\ImGradient.h" />
+    <ClInclude Include="..\Public\imgui\ImGuizmo\ImGuizmo.h" />
+    <ClInclude Include="..\Public\imgui\ImGuizmo\ImSequencer.h" />
+    <ClInclude Include="..\Public\imgui\ImGuizmo\ImZoomSlider.h" />
+    <ClInclude Include="..\Public\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="..\Public\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="..\Public\imgui\imgui_internal.h" />
+    <ClInclude Include="..\Public\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\Public\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\Public\imgui\imstb_truetype.h" />
+    <ClInclude Include="..\public\ImGui_Manager.h" />
+    <ClInclude Include="..\Public\Level_GamePlay.h" />
+    <ClInclude Include="..\Public\Level_Loading.h" />
+    <ClInclude Include="..\Public\Level_Logo.h" />
+    <ClInclude Include="..\Public\Level_Stage1.h" />
+    <ClInclude Include="..\Public\Level_Stage1_Boss.h" />
+    <ClInclude Include="..\Public\Level_Stage2.h" />
+    <ClInclude Include="..\Public\Loader.h" />
+    <ClInclude Include="..\Public\MainApp.h" />
+    <ClInclude Include="..\Public\Map_Stage1.h" />
+    <ClInclude Include="..\Public\Map_Stage1_Boss.h" />
+    <ClInclude Include="..\Public\MiniDoor.h" />
+    <ClInclude Include="..\Public\Monster_Boom.h" />
+    <ClInclude Include="..\Public\Monster_Arrow.h" />
+    <ClInclude Include="..\Public\Monster_BoomPart.h" />
+    <ClInclude Include="..\Public\Monster_Effect.h" />
+    <ClInclude Include="..\public\Monster.h" />
+    <ClInclude Include="..\Public\Monster_ShieldMan.h" />
+    <ClInclude Include="..\Public\Monster_ShieldManPart.h" />
+    <ClInclude Include="..\Public\Monster_Sword.h" />
+    <ClInclude Include="..\Public\NextPortal.h" />
+    <ClInclude Include="..\Public\Object.h" />
+    <ClInclude Include="..\Public\Obj_Common.h" />
+    <ClInclude Include="..\Public\Particle_BossLevel.h" />
+    <ClInclude Include="..\Public\Particle_BoxOpen.h" />
+    <ClInclude Include="..\Public\Particle_Explosion.h" />
+    <ClInclude Include="..\Public\Player.h" />
+    <ClInclude Include="..\Public\Player_Basic.h" />
+    <ClInclude Include="..\Public\Player_BlueBullet.h" />
+    <ClInclude Include="..\Public\Player_BlueEye.h" />
+    <ClInclude Include="..\Public\Effect_Common.h" />
+    <ClInclude Include="..\Public\Player_Bullet.h" />
+    <ClInclude Include="..\Public\Player_Effect_Dash.h" />
+    <ClInclude Include="..\Public\Player_Effect_Flame.h" />
+    <ClInclude Include="..\Public\Player_LevelBoss.h" />
+    <ClInclude Include="..\Public\Player_Pistol.h" />
+    <ClInclude Include="..\Public\Player_posion.h" />
+    <ClInclude Include="..\Public\Player_Skill.h" />
+    <ClInclude Include="..\Public\Player_SR.h" />
+    <ClInclude Include="..\Public\Player_Body.h" />
+    <ClInclude Include="..\Public\Player_WeaponMgr.h" />
+    <ClInclude Include="..\Public\Sky.h" />
+    <ClInclude Include="..\Public\Terrain.h" />
+    <ClInclude Include="..\public\UI.h" />
+    <ClInclude Include="..\Public\UI_Boss65HPBar.h" />
+    <ClInclude Include="..\Public\UI_Boss65ShieldBar.h" />
+    <ClInclude Include="..\Public\UI_CoinCnt.h" />
+    <ClInclude Include="..\Public\UI_Common.h" />
+    <ClInclude Include="..\public\UI_Com_Number.h" />
+    <ClInclude Include="..\Public\UI_Crosshair.h" />
+    <ClInclude Include="..\Public\UI_Etc_BoxItem.h" />
+    <ClInclude Include="..\Public\UI_Etc_BoxItems.h" />
+    <ClInclude Include="..\Public\UI_Etc_BoxItemsBg.h" />
+    <ClInclude Include="..\Public\UI_Etc_NextStage.h" />
+    <ClInclude Include="..\Public\UI_Etc_OpenBox.h" />
+    <ClInclude Include="..\Public\UI_PlayerDamaged.h" />
+    <ClInclude Include="..\Public\UI_IconBg.h" />
+    <ClInclude Include="..\Public\UI_MiniMap.h" />
+    <ClInclude Include="..\Public\UI_MiniMap_Monster.h" />
+    <ClInclude Include="..\Public\UI_MiniMap_Player.h" />
+    <ClInclude Include="..\Public\UI_MonsterHPBar.h" />
+    <ClInclude Include="..\Public\UI_MonsterShieldBar.h" />
+    <ClInclude Include="..\Public\UI_PlayerHPBar.h" />
+    <ClInclude Include="..\Public\UI_PlayerIcon.h" />
+    <ClInclude Include="..\Public\UI_PlayerShieldBar.h" />
+    <ClInclude Include="..\Public\UI_PlayerWeapon_Img.h" />
+    <ClInclude Include="..\Public\UI_PlayerWeapon_SkillbgMid.h" />
+    <ClInclude Include="..\Public\UI_PlayerWeapon_SkillbgR.h" />
+    <ClInclude Include="..\Public\UI_Player_Restart.h" />
+    <ClInclude Include="..\Public\UI_TextNum.h" />
+    <ClInclude Include="..\Public\UI_Victory.h" />
+    <ClInclude Include="..\Public\Weapon.h" />
+    <ClInclude Include="My3D.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Private\Arrow.cpp" />
+    <ClCompile Include="..\private\BackGround.cpp" />
+    <ClCompile Include="..\Private\Boss.cpp" />
+    <ClCompile Include="..\Private\Boss_65_Body.cpp" />
+    <ClCompile Include="..\Private\Boss_Effect_Crack.cpp" />
+    <ClCompile Include="..\Private\Boss_Effect_CrackLight.cpp" />
+    <ClCompile Include="..\Private\Boss_Skill_JumpStone.cpp" />
+    <ClCompile Include="..\Private\Boss_Skill_Shot.cpp" />
+    <ClCompile Include="..\Private\Boss_Skill_ThrowStone.cpp" />
+    <ClCompile Include="..\Private\Box.cpp" />
+    <ClCompile Include="..\Private\Particle_BossLevel.cpp" />
+    <ClCompile Include="..\Private\Particle_BoxOpen.cpp" />
+    <ClCompile Include="..\Private\BoxPart.cpp" />
+    <ClCompile Include="..\private\Camera_Free.cpp" />
+    <ClCompile Include="..\Private\Camera_Player.cpp" />
+    <ClCompile Include="..\private\Monster.cpp" />
+    <ClCompile Include="..\Private\Coin.cpp" />
+    <ClCompile Include="..\Private\Door.cpp" />
+    <ClCompile Include="..\Private\Effect_Common.cpp" />
+    <ClCompile Include="..\Private\Boss_Effect_TargetRing.cpp" />
+    <ClCompile Include="..\private\ImGui_Manager.cpp" />
+    <ClCompile Include="..\Private\Level_GamePlay.cpp" />
+    <ClCompile Include="..\Private\Level_Loading.cpp" />
+    <ClCompile Include="..\Private\Level_Logo.cpp" />
+    <ClCompile Include="..\Private\Level_Stage1.cpp" />
+    <ClCompile Include="..\Private\Level_Stage1_Boss.cpp" />
+    <ClCompile Include="..\Private\Level_Stage2.cpp" />
+    <ClCompile Include="..\Private\Loader.cpp" />
+    <ClCompile Include="..\Private\MainApp.cpp" />
+    <ClCompile Include="..\Private\Map_Stage1.cpp" />
+    <ClCompile Include="..\Private\Map_Stage1_Boss.cpp" />
+    <ClCompile Include="..\Private\MiniDoor.cpp" />
+    <ClCompile Include="..\Private\Monster_Boom.cpp" />
+    <ClCompile Include="..\Private\Monster_Arrow.cpp" />
+    <ClCompile Include="..\Private\Monster_BoomPart.cpp" />
+    <ClCompile Include="..\Private\Monster_Effect.cpp" />
+    <ClCompile Include="..\Private\Monster_ShieldMan.cpp" />
+    <ClCompile Include="..\Private\Monster_ShieldManPart.cpp" />
+    <ClCompile Include="..\Private\Monster_Sword.cpp" />
+    <ClCompile Include="..\Private\NextPortal.cpp" />
+    <ClCompile Include="..\Private\Object.cpp" />
+    <ClCompile Include="..\Private\Obj_Common.cpp" />
+    <ClCompile Include="..\Private\Particle_Explosion.cpp" />
+    <ClCompile Include="..\Private\Player.cpp" />
+    <ClCompile Include="..\Private\Player_Basic.cpp" />
+    <ClCompile Include="..\Private\Player_BlueBullet.cpp" />
+    <ClCompile Include="..\Private\Player_BlueEye.cpp" />
+    <ClCompile Include="..\Private\Player_Bullet.cpp" />
+    <ClCompile Include="..\Private\Player_Effect_Dash.cpp" />
+    <ClCompile Include="..\Private\Player_Effect_Flame.cpp" />
+    <ClCompile Include="..\Private\Player_LevelBoss.cpp" />
+    <ClCompile Include="..\Private\Player_Pistol.cpp" />
+    <ClCompile Include="..\Private\Player_posion.cpp" />
+    <ClCompile Include="..\Private\Player_Skill.cpp" />
+    <ClCompile Include="..\Private\Player_SR.cpp" />
+    <ClCompile Include="..\Private\Player_Body.cpp" />
+    <ClCompile Include="..\Private\Player_WeaponMgr.cpp" />
+    <ClCompile Include="..\Private\Sky.cpp" />
+    <ClCompile Include="..\Private\Terrain.cpp" />
+    <ClCompile Include="..\private\UI.cpp" />
+    <ClCompile Include="..\Private\UI_Boss65HPBar.cpp" />
+    <ClCompile Include="..\Private\UI_Boss65ShieldBar.cpp" />
+    <ClCompile Include="..\Private\UI_CoinCnt.cpp" />
+    <ClCompile Include="..\Private\UI_Common.cpp" />
+    <ClCompile Include="..\private\UI_Com_Number.cpp" />
+    <ClCompile Include="..\Private\UI_Crosshair.cpp" />
+    <ClCompile Include="..\Private\UI_Etc_BoxItem.cpp" />
+    <ClCompile Include="..\Private\UI_Etc_BoxItems.cpp" />
+    <ClCompile Include="..\Private\UI_Etc_BoxItemsBg.cpp" />
+    <ClCompile Include="..\Private\UI_Etc_NextStage.cpp" />
+    <ClCompile Include="..\Private\UI_Etc_OpenBox.cpp" />
+    <ClCompile Include="..\Private\UI_IconBg.cpp" />
+    <ClCompile Include="..\Private\UI_MiniMap.cpp" />
+    <ClCompile Include="..\Private\UI_MiniMap_Monster.cpp" />
+    <ClCompile Include="..\Private\UI_MiniMap_Player.cpp" />
+    <ClCompile Include="..\Private\UI_MonsterHPBar.cpp" />
+    <ClCompile Include="..\Private\UI_MonsterShieldBar.cpp" />
+    <ClCompile Include="..\Private\UI_PlayerDamaged.cpp" />
+    <ClCompile Include="..\Private\UI_PlayerHPBar.cpp" />
+    <ClCompile Include="..\Private\UI_PlayerIcon.cpp" />
+    <ClCompile Include="..\Private\UI_PlayerShieldBar.cpp" />
+    <ClCompile Include="..\Private\UI_PlayerWeapon_Img.cpp" />
+    <ClCompile Include="..\Private\UI_PlayerWeapon_SkillbgMid.cpp" />
+    <ClCompile Include="..\Private\UI_PlayerWeapon_SkillbgR.cpp" />
+    <ClCompile Include="..\Private\UI_Player_Restart.cpp" />
+    <ClCompile Include="..\Private\UI_TextNum.cpp" />
+    <ClCompile Include="..\Private\UI_Victory.cpp" />
+    <ClCompile Include="..\Private\Weapon.cpp" />
+    <ClCompile Include="..\Public\imgui\imgui.cpp" />
+    <ClCompile Include="..\Public\imgui\ImGuizmo\GraphEditor.cpp" />
+    <ClCompile Include="..\Public\imgui\ImGuizmo\ImCurveEdit.cpp" />
+    <ClCompile Include="..\Public\imgui\ImGuizmo\ImGradient.cpp" />
+    <ClCompile Include="..\Public\imgui\ImGuizmo\ImGuizmo.cpp" />
+    <ClCompile Include="..\Public\imgui\ImGuizmo\ImSequencer.cpp" />
+    <ClCompile Include="..\Public\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\Public\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\Public\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="..\Public\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\Public\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\Public\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="My3D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="My3D.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxAnimMesh.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxCube.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxMesh.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxNorTex.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxPointInstance.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxPosTex.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxPosTexAlpha.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxRectInstance.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="My3D.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

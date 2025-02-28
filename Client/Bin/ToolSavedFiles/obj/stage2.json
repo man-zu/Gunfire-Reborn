@@ -1,0 +1,101 @@
+[
+    {
+        "eObjType": 2,
+        "fPosX": 30.07575225830078,
+        "fPosY": -1.0,
+        "fPosZ": 20.57400894165039,
+        "fRotY": 90.0,
+        "sComponentName": "Prototype_Component_Obj_area1",
+        "sFileName": "area1",
+        "sLayerTag": "Layer_Obj_area10",
+        "sPrototpyeName": "Prototype_GameObject_Obj_area1"
+    },
+    {
+        "eObjType": 2,
+        "fPosX": 46.573429107666016,
+        "fPosY": -0.9915149211883545,
+        "fPosZ": 48.49180221557617,
+        "fRotY": 180.0,
+        "sComponentName": "Prototype_Component_Obj_area5",
+        "sFileName": "area5",
+        "sLayerTag": "Layer_Obj_area50",
+        "sPrototpyeName": "Prototype_GameObject_Obj_area5"
+    },
+    {
+        "eObjType": 2,
+        "fPosX": 42.58905792236328,
+        "fPosY": -1.4099830389022827,
+        "fPosZ": 27.111000061035156,
+        "fRotY": 0.0,
+        "sComponentName": "Prototype_Component_Obj_grayDoor",
+        "sFileName": "grayDoor",
+        "sLayerTag": "Layer_Obj_grayDoor0",
+        "sPrototpyeName": "Prototype_GameObject_Obj_grayDoor"
+    },
+    {
+        "eObjType": 2,
+        "fPosX": 34.95332336425781,
+        "fPosY": -1.6977572441101074,
+        "fPosZ": 38.30821228027344,
+        "fRotY": 180.0,
+        "sComponentName": "Prototype_Component_Obj_grayDoor",
+        "sFileName": "grayDoor",
+        "sLayerTag": "Layer_Obj_grayDoor1",
+        "sPrototpyeName": "Prototype_GameObject_Obj_grayDoor"
+    },
+    {
+        "eObjType": 2,
+        "fPosX": 51.8740234375,
+        "fPosY": -1.696302890777588,
+        "fPosZ": 63.156524658203125,
+        "fRotY": -90.0,
+        "sComponentName": "Prototype_Component_Obj_grayDoor",
+        "sFileName": "grayDoor",
+        "sLayerTag": "Layer_Obj_grayDoor2",
+        "sPrototpyeName": "Prototype_GameObject_Obj_grayDoor"
+    },
+    {
+        "eObjType": 2,
+        "fPosX": -29.479618072509766,
+        "fPosY": -2.2816765308380127,
+        "fPosZ": 127.6681900024414,
+        "fRotY": 90.0,
+        "sComponentName": "Prototype_Component_Obj_11101",
+        "sFileName": "11101",
+        "sLayerTag": "Layer_Obj_111013",
+        "sPrototpyeName": "Prototype_GameObject_Obj_11101"
+    },
+    {
+        "eObjType": 2,
+        "fPosX": 88.60636901855469,
+        "fPosY": 0.0,
+        "fPosZ": 22.430665969848633,
+        "fRotY": 0.0,
+        "sComponentName": "Prototype_Component_Obj_area8",
+        "sFileName": "area8",
+        "sLayerTag": "Layer_Obj_area85",
+        "sPrototpyeName": "Prototype_GameObject_Obj_area8"
+    },
+    {
+        "eObjType": 2,
+        "fPosX": 7.207766532897949,
+        "fPosY": -1.0744762420654297,
+        "fPosZ": -57.17019271850586,
+        "fRotY": 0.0,
+        "sComponentName": "Prototype_Component_Obj_11101",
+        "sFileName": "11101",
+        "sLayerTag": "Layer_Obj_111016",
+        "sPrototpyeName": "Prototype_GameObject_Obj_11101"
+    },
+    {
+        "eObjType": 0,
+        "fPosX": 52.6618537902832,
+        "fPosY": -2.7040990352630615,
+        "fPosZ": 34.50762939453125,
+        "fRotY": 90.0,
+        "sComponentName": "Prototype_Component_Obj_grayDoor",
+        "sFileName": "grayDoor",
+        "sLayerTag": "Layer_Obj_grayDoor3",
+        "sPrototpyeName": "Prototype_GameObject_Obj_grayDoor"
+    }
+]

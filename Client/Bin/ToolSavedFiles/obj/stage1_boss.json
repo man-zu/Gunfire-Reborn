@@ -1,0 +1,13 @@
+[
+    {
+        "eObjType": 0,
+        "fPosX": 62.39609146118164,
+        "fPosY": -0.9940634965896606,
+        "fPosZ": 78.4704360961914,
+        "fRotY": 0.0,
+        "sComponentName": "Prototype_Component_Obj_test",
+        "sFileName": "test",
+        "sLayerTag": "Layer_Obj_test0",
+        "sPrototpyeName": "Prototype_GameObject_Obj_test"
+    }
+]

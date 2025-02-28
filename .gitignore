@@ -1,0 +1,22 @@
+Engine/Default/x64
+Client/Default/x64
+Engine/Default/x64/
+Client/Default/x64/
+Client/Default/imgui.ini
+.vs
+.v17
+Client/Bin/Engine.dll
+Client/Bin/My3D.exe
+Client/Bin/My3D.pdb
+# Engine/Bin/
+Engine/Bin/Engine.exp
+Engine/Bin/Engine.lib
+Engine/Bin/Engine.dll
+Engine/Bin/Engine.pdb
+EngineSDK/Lib/Engine.lib
+
+.v17/Browse.VC.db
+
+
+# 모든 .c 확장자 파일
+*.cso
